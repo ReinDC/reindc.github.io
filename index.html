@@ -1,177 +1,33 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<title>Space Invader</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Header Example</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<style>
-    body{ background-color: black; }
-
-    #invader{
-        display: flex;
-        flex-wrap: wrap;
-        width: 550px;
-        margin: auto;
-    }
-
-    .green-block{
-        width: 48px;
-        height: 48px;
-        background-color: MediumSeaGreen;
-        margin: 1px;
-    }
-
-    .white-block{
-        width: 48px;
-        height: 48px;
-        background-color: white;
-        margin: 1px;
-    }
-
-    p{
-        color: white;
-    }
-</style>
-
-<body onload="bobCreation()">
-
-<div id="invader"></div>
-<div class="scriptures">
-    Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-Bob is the best <br>
-</div>
-
-<script>
-    const bobInfo = [   0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,
-                        1,0,1,1,1,1,1,1,1,0,0,1,0,1,0,1,1,1,0,1,0,0,
-                        1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,
-                        0,0,1,0,0,0,0,0,1,0,1,0,1,1,0,0,0,0,1,1,0,0
-                    ];
-    const len = bobInfo.length;
-
-
-
-
-    function whiteBlock() {
-        var div = document.createElement('div');
-        div.setAttribute('class', 'white-block');
-        document.getElementById("invader").appendChild(div);
-    }
-
-    function greenBlock() {
-        var div = document.createElement('div');
-        div.setAttribute('class', 'green-block');
-        document.getElementById("invader").appendChild(div);
-    }
-
-    function bobCreation() {
-        for(var i = 0; i < len; i++){
-            if(bobInfo[i] === 0) {
-                whiteBlock();
-            }
-            else{
-                greenBlock();
-            }
-        }
-    }
-
-</script>
-
-
-<!-- <script>
-    
-    const button = document.getElementById("button");
-
-
-    button.addEventListener('click', alert());
-
-    function addblock(){
-        var div = document.createElement('div');
-        div.setAttribute('class', 'green-block');
-        // const node = document.getElementsByClassName("green-block");
-        document.body.appendChild(div);
-    }
-
-    function alert(){
-        alert("Click");
-    }
-    
-
-
-    
-    // div.setAttribute('class', 'white-block');
-    
-
-
-   
-    // const node = document.getElementsByClassName("green-block");
-
-</script> -->
-
+<body>
+  <header>
+    <h1>My Site</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About Me</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to the home page!</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here you'll find a showcase of my projects.</p>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>This section contains information about me.</p>
+    </section>
+  </main>
 </body>
-
 </html>
