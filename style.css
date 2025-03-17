@@ -1,4 +1,6 @@
-
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
 
 .navbar{
   color: #17191f;
@@ -37,10 +39,45 @@
 }
 
 .contact {
-  display: flex;
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
-.contact img {
-  width: 10px;
-  height: 10px;
+.contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.contact p {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.contact p img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.contact a {
+  color: #17191f;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  /* text-decoration: underline; */
+  background-color: #d4c4bb;
+  border-radius: 10px;
+  padding: 5px;
 }
