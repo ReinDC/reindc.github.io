@@ -31,11 +31,12 @@ body {
 }
 
 .navbar a:hover {
+  text-decoration: none;
   font-size: 20px;
   background-color: #d4c4bb;
   border-radius: 10px;
   font-weight: bold; 
-  padding: 10px;
+  padding: 5px;
 }
 
 .contact {
@@ -79,5 +80,65 @@ body {
   /* text-decoration: underline; */
   background-color: #d4c4bb;
   border-radius: 10px;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about {
+  background: #fff;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+.projects{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.project-card {
+  background-color: #c2b8b828;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.568);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+.project-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.project-card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+.project-card p {
+  margin: 10px 0;
+  color: #777;
+}
+.project-card a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.project-card a:hover {
+  background-color: #0c0c0c34;
   padding: 5px;
 }
