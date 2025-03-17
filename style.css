@@ -100,7 +100,6 @@ h1 {
   line-height: 1.6;
 }
 
-
 .projects{
   font-family: Arial, sans-serif;
   display: flex;
@@ -116,6 +115,10 @@ h1 {
   text-align: center;
   padding: 20px;
   margin: 10px;
+}
+
+.project-card:hover {
+  background-color: #896f6f60;
 }
 .project-card img {
   width: 100px;
