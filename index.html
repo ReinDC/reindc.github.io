@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Space Invader</title>
+</head>
+
+<style>
+    body{ background-color: black; }
+
+    #invader{
+        display: flex;
+        flex-wrap: wrap;
+        width: 550px;
+        margin: auto;
+    }
+
+    .green-block{
+        width: 48px;
+        height: 48px;
+        background-color: MediumSeaGreen;
+        margin: 1px;
+    }
+
+    .white-block{
+        width: 48px;
+        height: 48px;
+        background-color: white;
+        margin: 1px;
+    }
+
+    p{
+        color: white;
+    }
+</style>
+
+<body onload="bobCreation()">
+
+<div id="invader"></div>
+<div class="scriptures">
+    Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+Bob is the best <br>
+</div>
+
+<script>
+    const bobInfo = [   0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,
+                        1,0,1,1,1,1,1,1,1,0,0,1,0,1,0,1,1,1,0,1,0,0,
+                        1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,
+                        0,0,1,0,0,0,0,0,1,0,1,0,1,1,0,0,0,0,1,1,0,0
+                    ];
+    const len = bobInfo.length;
+
+
+
+
+    function whiteBlock() {
+        var div = document.createElement('div');
+        div.setAttribute('class', 'white-block');
+        document.getElementById("invader").appendChild(div);
+    }
+
+    function greenBlock() {
+        var div = document.createElement('div');
+        div.setAttribute('class', 'green-block');
+        document.getElementById("invader").appendChild(div);
+    }
+
+    function bobCreation() {
+        for(var i = 0; i < len; i++){
+            if(bobInfo[i] === 0) {
+                whiteBlock();
+            }
+            else{
+                greenBlock();
+            }
+        }
+    }
+
+</script>
+
+
+<!-- <script>
+    
+    const button = document.getElementById("button");
+
+
+    button.addEventListener('click', alert());
+
+    function addblock(){
+        var div = document.createElement('div');
+        div.setAttribute('class', 'green-block');
+        // const node = document.getElementsByClassName("green-block");
+        document.body.appendChild(div);
+    }
+
+    function alert(){
+        alert("Click");
+    }
+    
+
+
+    
+    // div.setAttribute('class', 'white-block');
+    
+
+
+   
+    // const node = document.getElementsByClassName("green-block");
+
+</script> -->
+
+</body>
+
+</html>
