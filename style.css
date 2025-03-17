@@ -100,12 +100,11 @@ h1 {
   line-height: 1.6;
 }
 
-.projects{
+.projects {
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+  gap: 20px; /* space between cards */
 }
 .project-card {
   background-color: #c2b8b828;
