@@ -11,6 +11,9 @@ body {
   padding: 30px;
   margin-bottom: 50px;
   align-items: center;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
 }
 
 .navbar > .text {
