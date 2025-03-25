@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Loop through the cards and hide those beyond the first three
     projectCards.forEach((card, index) => {
-      if (index >= 3) {
+      if (index >= 4) {
         card.style.display = 'none';
       } else {
         card.style.display = 'block';
